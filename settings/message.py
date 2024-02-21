@@ -45,7 +45,7 @@ settings = """
 -<b>разработчик: - </b><i>({})</i>
 
 
-<b>{}Ваше имя</b>
+<b>{}{}</b>
 
 """.format(
     KEYBOARD['<<'],
@@ -60,6 +60,7 @@ settings = """
     VERSION,
     AUTHOR,
     KEYBOARD['COPY'],
+    AUTHOR,
 )
 # ответ пользователю при добавлении товара в заказ
 product_order = """

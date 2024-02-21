@@ -16,4 +16,3 @@ class HandlerCommands(Handler):
         def handle(message):
             if message.text == '/start':
                 self.pressed_btn_start(message)
-                

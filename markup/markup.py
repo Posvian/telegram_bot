@@ -26,3 +26,9 @@ class Keyboards:
         item_button_1 = self.set_btn('<<')
         self.markup.row(item_button_1)
         return self.markup
+
+    def settings_menu(self):
+        self.markup = ReplyKeyboardMarkup(True, True)
+        item_button_1 = self.set_btn('<<')
+        self.markup.row(item_button_1)
+        return self.markup
