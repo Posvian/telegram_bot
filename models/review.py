@@ -2,9 +2,7 @@ from sqlalchemy import Column, String, Integer, ForeignKey, DateTime
 from sqlalchemy.orm import relationship, backref, DeclarativeBase
 from models.product import Products
 
-
-class Base(DeclarativeBase):
-    pass
+from data_base.dbcore import Base
 
 
 class Review(Base):

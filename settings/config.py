@@ -3,7 +3,7 @@ from emoji import emojize
 
 TOKEN = '6713502139:AAGUyzx74WC5lUJQT-SuGkciu3pS7a7Rz7U'
 
-NAME_DB = 'products.sqlite'
+NAME_DB = 'products.db'
 VERSION = '0.0.1'
 AUTHOR = 'Posvian'
 
