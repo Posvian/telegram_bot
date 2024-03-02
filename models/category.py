@@ -1,9 +1,6 @@
 from sqlalchemy import Column, String, Integer, Boolean
 from sqlalchemy.orm import DeclarativeBase
-
-
-class Base(DeclarativeBase):
-    pass
+from data_base.dbcore import Base
 
 
 class Category(Base):

@@ -1,10 +1,7 @@
 from sqlalchemy import Column, Integer, DateTime, ForeignKey
 from sqlalchemy.orm import relationship, backref, DeclarativeBase
 from models.product import Products
-
-
-class Base(DeclarativeBase):
-    pass
+from data_base.dbcore import Base
 
 
 class Order(Base):
@@ -20,7 +17,7 @@ class Order(Base):
         Products,
         backref=backref('orders',
                         uselist=True,
-                        cascade='delete.all'))
+                        cascade='delete,all'))
 
     def __str__(self):
         return f"{self.quantity} {self.data}"

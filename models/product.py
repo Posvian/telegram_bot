@@ -1,10 +1,7 @@
 from sqlalchemy import Column, String, Integer, Boolean, Float, ForeignKey
 from sqlalchemy.orm import relationship, backref, DeclarativeBase
 from models.category import Category
-
-
-class Base(DeclarativeBase):
-    pass
+from data_base.dbcore import Base
 
 
 class Products(Base):
